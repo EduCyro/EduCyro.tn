@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Admin Requests - EduCyro</title>
+<style>
+body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding:50px;background:#f0f0f0;}
+h2{text-align:center;margin-bottom:30px;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:15px;border:1px solid #ccc;text-align:center;}
+th{background:#333;color:#fff;}
+</style>
+</head>
+<body>
+<h2>طلبات إنشاء الحسابات الجديدة</h2>
+<table>
+  <thead>
+    <tr><th>اسم المستخدم</th><th>كلمة السر</th></tr>
+  </thead>
+  <tbody id="requestsTable"></tbody>
+</table>
+
+<script>
+let requests = JSON.parse(localStorage.getItem('accountRequests') || '[]');
+let tbody = document.getElementById('requestsTable');
+requests.forEach(r=>{
+  let row = document.createElement('tr');
+  row.innerHTML = `<td>${r.username}</td><td>${r.password}</td>`;
+  tbody.appendChild(row);
+});
+</script>
+</body>
+</html>
