@@ -117,7 +117,7 @@ footer a:hover{text-decoration:underline;}
 <!-- Main Screen -->
 <div id="mainScreen">
 <header>
-  <div class="logo">
+  <div class="logo" onclick="showSection('chooseScreen')">
     <img src="logo.png" alt="EduCyro Logo">
     EduCyro
   </div>
@@ -142,13 +142,21 @@ footer a:hover{text-decoration:underline;}
 
 <!-- Cybersecurity Section -->
 <section id="cybersecurity">
-  <h2>التعليم السيبراني</h2>
-  <div class="card-container">
     <div class="card">
-      <h3>درس 1: كيفية اختراق حساب إنستغرام</h3>
+    <h3>تنزيل كالي لنكس</h3>
       <p>By: DevBtzAmir</p>
       <video width="100%" controls>
-        <source src="videos/instagram_hack.mp4" type="video/mp4">
+        <source src="Kalilinux.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو
+      </video>
+    </div>
+  </div>
+</section>
+    <div class="card">
+      <h3>كيف يمكن للهاكرز تخمين كلمة المرور</h3>
+      <p>By: DevBtzAmir</p>
+      <video width="100%" controls>
+        <source src="hackers_location.mp4" type="video/mp4">
         متصفحك لا يدعم عرض الفيديو
       </video>
     </div>
@@ -171,6 +179,14 @@ footer a:hover{text-decoration:underline;}
       <p>By: Zakaria Robotique</p>
       <video width="100%" controls>
         <source src="videos/hc06_arduino.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="card">
+      <h3>درس 3: شرح ESP32</h3>
+      <p>By: Zakaria Robotique</p>
+      <video width="100%" controls>
+        <source src="videos/esp32_explanation.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو
       </video>
     </div>
   </div>
@@ -250,3 +266,5 @@ function logout(){
 </script>
 </body>
 </html>
+
+ 
